@@ -1,0 +1,139 @@
+@import "bootstrap";
+
+
+.checkout-form {
+  width: 100%;
+  height: auto;
+  padding: 100px 128px;
+  .nav-tabs {
+    border-bottom: 1px solid #eef1f4;
+    .nav-link.active {
+      border: 0;
+      border-bottom:  1px solid #707476;
+      color: #1B2125;
+    }
+    .nav-link {
+      color: #D4D9DD;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      padding: 0 51px 31px 51px;
+    }
+  }
+  .step-title {
+    color: #1B2125;
+    font-size: 24px;
+    font-family: "Open Sans";
+    padding: 71px 0 38px 0;
+  }
+  .step-one {
+    label {
+      color: #D4D9DD;
+      font-family: "Open Sans";
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+    input {
+      width: 100%;
+      height: 54px;
+      border: 1px solid #DDE3E8;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+    }
+  }
+}
+
+
+.shopping-cart {
+  background-color: #f8fafb;
+  padding: 0;
+  .shopping-cart-content {
+    margin: 0 !important;
+    padding: 62px 50px 0 50px;
+    width: 100%;
+    height: auto;
+    .row {
+      margin: 0;
+    }
+    .shopping-cart-header {
+      margin-bottom: 26px;
+      padding-bottom: 25px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #eef1f4;
+      .step-title {
+        font-size: 24px;
+      }
+      .chousen-item-counter {
+        margin: auto 0;
+        height: 24px;
+        width: 24px;
+        padding: 1px 0 0 7px;
+        color: #fff;
+        border-radius: 100px;
+        background-color: #0095F8;
+        box-shadow: 0 2px 7px 0 rgba(120,137,149,0.25);
+      }
+    }
+    .shopping-item {
+      margin-top: 20px;
+      margin-bottom: 45px;
+      .media-body {
+        padding-left: 25px;
+        color: #788995;
+        font-family: "Avenir Next";
+        font-size: 16px;
+      }
+    }
+    .quantity-dropdown {
+      cursor: pointer;
+      border: 0;
+      border-top: 1px solid #eef1f4;
+      border-bottom: 1px solid #eef1f4;
+      font-family: "Open Sans";
+      padding: 13px 0 17px 0;
+      font-size: 16px;
+      background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      color: #2B2B2B;
+      width: 100%;
+      min-height: 46px;
+      background-position-x: 100%;
+      margin-bottom: 25px;
+    }
+    .subtotal {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #eef1f4;
+      .subtotal-name {
+        color: #788995;
+        font-family: "Open Sans";
+        font-size: 14px;
+      }
+      .subtotal-value {
+        text-align: right;
+        font-weight: 600;
+      }
+    }
+    .total-price {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      .price-name {
+        color: #1B2125;
+        font-family: "Open Sans";
+        font-size: 16px;
+      }
+      .price-value {
+        text-align: right;
+        font-weight: 600;
+      }
+    }
+  }
+}
