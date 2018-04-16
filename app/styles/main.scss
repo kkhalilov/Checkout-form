@@ -367,3 +367,12 @@ input {
     padding: 0 0 31px 0 !important;
   }
 }
+@media (max-width: 1200px) {
+  #cardDate {
+    padding-left: 12px !important;
+    font-size: 14px;
+  }
+  #cardCode {
+    padding-left: 12px !important;
+  }
+}
