@@ -20,7 +20,11 @@ $('#postalCode').on('keyup', function () {
     }
 
 });
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
 $('#phone').mask('+7(999)999-9999');
 $('#cardNumber').mask('9999 9999 9999 9999');
 $('#cardDate').mask('99 / 99');
 $('#cardCode').mask('999');
+
