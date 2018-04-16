@@ -81,6 +81,7 @@ input {
   height: auto;
   padding: 100px 90px;
   .nav-tabs {
+    justify-content: space-between;
     border-bottom: 1px solid #eef1f4;
      .active {
       border: 0;
@@ -94,7 +95,7 @@ input {
       font-size: 14px;
       font-weight: 600;
       border: none;
-      padding: 0 51px 31px 51px;
+      padding: 0 20px 31px 20px;
       a {
         color: #D4D9DD;
       }
@@ -357,5 +358,11 @@ input {
 @media (min-width: 1200px) {
   .container {
     max-width: 1360px !important;
+  }
+}
+
+@media (max-width: 1345px) {
+  .nav-tabs li {
+    padding: 0 0 31px 0 !important;
   }
 }

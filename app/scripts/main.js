@@ -1,6 +1,10 @@
 $('.btnNext').click(function(){
-    $('.nav-tabs > .active').removeClass('active').next('li').find('a').trigger('click').closest('li').addClass('active');
+    $('.nav-tabs > .active').removeClass('active').next('li').find('a').closest('li').addClass('active');
     $('.tab-content > .active').removeClass('show active').next('div').addClass('show active');
+});
+$('.btnBack').click(function(){
+    $('.nav-tabs > .active').removeClass('active').prev('li').find('a').closest('li').addClass('active');
+    $('.tab-content > .active').removeClass('show active').prev('div').addClass('show active');
 });
 $('#firstName, #lastName').on('keyup', function () {
     var reg = /\d/g;

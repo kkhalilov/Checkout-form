@@ -6,7 +6,20 @@
 .btn-info:hover {
   background-color: #0160b5 !important;
 }
+.btn-danger {
+  background-color: #ff1b00 !important;
+  height: 54px !important;
+  margin: 15px;
+  box-shadow: 0 2px 7px 0 rgba(120,137,149,0.25);
+}
+.btn-danger:hover {
+  background-color: #ff0005 !important;
+}
 .btn-lg {
   height: 54px !important;
   width: 250px !important;
+}
+.btn-md {
+  height: 54px !important;
+  width: 200px !important;
 }
