@@ -24,22 +24,22 @@
     <!-- endbuild -->
   </head>
   <body>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-        <div class="col-md-9 checkout-form">
+        <div class="col-md-8 checkout-form">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">01 CUSTOMER INFO</a>
+            <li class="active">
+              <a id="home-tab" href="#home">01 CUSTOMER INFO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">02 SHIPPING INFO</a>
+            <li>
+              <a id="profile-tab" href="#profile">02 SHIPPING INFO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">03 PAYMENT SELECTION</a>
+            <li>
+              <a id="contact-tab" href="#contact">03 PAYMENT SELECTION</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="home" role="tabpanel">
               <div class="container-fluid step-one" style="padding: 0 !important;">
                 <div class="row">
                   <div class="col-md-12">
@@ -105,26 +105,178 @@
                     <form>
                       <div class="form-group">
                         <label for="phone">Phone</label>
-                        <input type="text" class="form-control" id="phone" placeholder="Phone">
+                        <input type="text" class="form-control" id="phone" name="tel" placeholder="+7(XXX)XXX-XXXX">
                       </div>
                     </form>
                   </div>
                 </div>
                 <div class="row float-right">
-                  <button type="button" class="btn btn-info btn-lg">Continue to Shipping</button>
+                  <button type="button" class="btn btn-info btn-lg btnNext">Continue to Shipping</button>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">text2</div>
-
-
-
-
-
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">text3</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel">
+              <div class="container-fluid step-two">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="step-title">
+                        Shipping Information
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="user-data">
+                        <div class="user-data-list">
+                          <ul>
+                            <li>Jamy Larson</li>
+                            <li>Unit 2 Green Mount Retail Park</li>
+                            <li>Halifax</li>
+                            <li>HX1 5QN</li>
+                            <li>Tel:  0344 332 5931</li>
+                          </ul>
+                        </div>
+                        <div class="user-data-map">
+                          <img src="images/map.png" width="100%" height="auto" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="step-title">
+                        Shipping Method
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="shipping-method-thumb">
+                        <ul>
+                          <li class="shipping-method-thumb-title-active">
+                            Standart Delivery
+                          </li>
+                          <li class="shipping-method-thumb-content">
+                            Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="shipping-method-thumb">
+                        <ul>
+                          <li class="shipping-method-thumb-title">
+                            <div class="custom-checkbox" id="white"></div>
+                            Fast Delivery
+                          </li>
+                          <li class="shipping-method-thumb-content">
+                            Estimated 2-5 Days Shipping (Duties and taxes may be due upon delivery)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row float-right">
+                    <button type="button" class="btn btn-info btn-lg btnNext">Continue to Shipping</button>
+                  </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel">
+              <div class="container-fluid step-three" style="padding: 0;">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="step-title">
+                      Payment Selection
+                    </div>
+                  </div>
+                </div>
+                <section class="credit-card-aria">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="shipping-method-thumb">
+                        <ul>
+                          <li class="shipping-method-thumb-title-active">
+                            Credit Card
+                          </li>
+                          <li class="shipping-method-thumb-content">
+                            Safe money transfer using your bank account. Visa, Maestro, Discover, American Express.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3 text-center bank-icons">
+                      <img src="images/visa.png" alt="">
+                      <img src="images/master-card.png" alt="">
+                      <img src="images/amex.png" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12" style="padding: 0 40px 0 40px">
+                      <form>
+                        <div class="form-group">
+                          <label for="cardNumber">Card Number</label>
+                          <input type="text" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row" style="padding: 13px 25px 0 25px">
+                    <div class="col-md-6">
+                      <form>
+                        <div class="form-group">
+                          <label for="nameOnCard">Card Number</label>
+                          <input type="text" class="form-control" id="nameOnCard">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-3">
+                      <form>
+                        <div class="form-group">
+                          <label for="cardDate">Expiry Date</label>
+                          <input type="text" class="form-control" id="cardDate" placeholder="MM / YY">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-3">
+                      <form>
+                        <div class="form-group">
+                          <label for="cardCode">CVV Code</label>
+                          <input type="text" class="form-control" id="cardCode">
+                          <a href="#">
+                            <span class="cvv-code-btn">?</span>
+                          </a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+                <section class="pay-pal-aria">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="shipping-method-thumb">
+                        <ul>
+                          <li class="shipping-method-thumb-title">
+                            PayPal
+                          </li>
+                          <li class="shipping-method-thumb-content">
+                            You will be redirected to PayPal website to complete your purchase securely.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3 text-center pay-pal-icon">
+                      <img src="images/paypal.png" alt="">
+                    </div>
+                  </div>
+                </section>
+                <div class="row float-right">
+                  <button type="button" class="btn btn-info btn-lg">Complete Order</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 shopping-cart">
+        <div class="col-md-4 shopping-cart">
           <div class="container-fluid shopping-cart-content">
             <div class="row">
               <div class="col-md-12">
@@ -192,11 +344,6 @@
         </div>
     </div>
   </div>
-
-
-
-
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -206,16 +353,18 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="/bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    <!-- build:js scripts/plugins.js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap/js/dist/util.js"></script>
     <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
     <script src="/bower_components/bootstrap/js/dist/button.js"></script>
@@ -228,9 +377,6 @@
     <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
     <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

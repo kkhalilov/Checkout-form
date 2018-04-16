@@ -5,7 +5,8 @@
     "bootstrap": "~4.0.0-alpha.6",
     "modernizr": "~2.8.1",
     "jquery": "^3.3.1",
-    "scrollmagic": "^2.0.5"
+    "scrollmagic": "^2.0.5",
+    "jquery.maskedinput": "^1.4.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",
